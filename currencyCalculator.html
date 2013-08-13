@@ -1,0 +1,39 @@
+<!doctype html>	
+<html lang ="en" ng-app>
+
+
+<head>
+	<meta charset="utf-8"/>	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Angular JS Hello World!!</title>	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+</head>
+
+<body>
+
+<div ng-controller="calculate" class="container well form-group">
+	
+	<h3>Invoice:</h3><br>
+	<label>Quantity: </label>
+	<input type="number" ng-model="quantity" class="form-control"><br>
+
+	<label>Price:</label>
+	<input type="number" ng-model="price" class="form-control"><br>
+
+	<label>Total:</label><br>
+	<span>{{quantity*price}}</span> 
+	
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/currencyCalculator.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</html>
