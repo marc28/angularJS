@@ -16,10 +16,10 @@
 	
 	<h3>Invoice:</h3><br>
 	<label>Quantity: </label>
-	<input type="number" ng-model="quantity" class="form-control"><br>
+	<input type="number" ng-model="quantity" step="1"class="form-control"><br>
 
 	<label>Price:</label>
-	<input type="number" ng-model="price" class="form-control"><br>
+	<input type="number" ng-model="price" step=".5" class="form-control"><br>
 
 	<label>Total:</label><br>
 	<span>{{quantity*price}}</span> 
