@@ -1,26 +1,42 @@
-<!doctype html>
-<html lang ="en" ng-app> <!--Note the ng-app included. Thats a DIRECTIVE in Angular JS. Similar style to bootstrap-->
+<!doctype html>				<!-- Standard opening HTML5 tags -->
+
+<html lang ="en" ng-app> 	<!--Note the ng-app is included to initalize Angular, take this out Angular does NOT works. Thats a DIRECTIVE in Angular JS
+							other examples of CONTROLLERS ng-repeat or ng-model.-->
+							<!-- Because ng-app is included here it means the WHOLE document is 'effected' by Angular, however if it is just included in a single DIV then just THAT particular DIV is 'effected'. It is common to see ng-app included in the first body tag also. -->
+							<!-- Directives are API's that allows you to extend the html compiler. It is possible to build your own
+							directives with Angular JS but this is further learning down the line-->
+							<!-- leng="en" - Language = English -->
+
 <head>
-  <meta charset="utf-8"/>
-	<title>Angular JS Hello World!!</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8"/>									<!-- Defines what character coding is used in the page. Make sure to include in every HTML5 document -->
+	<title>Angular JS Hello World!!</title>					<!-- Title on top of page -->
+	<link rel="stylesheet" type="text/css" href="main.css">	<!-- A link to my seperate style sheet. Note that this is not included in a serperate FOLDER. If I 																	 include style sheets in seperate folders, the link must be included "css/main.css" -->
+															<!-- If Boostrap was being used to develop this site, it would also be referenced in the head here 
+																 "<link rel="stylesheet" type="text/css" href="css/bootstrap.css">". A link to the Bootstrap JavaScript would be required at the bottom of the body also. See below -->
 
 </head>
+
 <body>
 
-<h2> Hello World!!</h2>
+<h2> Hello World!!</h2>										<!-- Header size 2 which is 'hard coded' and can not be manipulated by Angular in this example-->
 
 
-<input type="text" ng-model="name"> <!-- No script tag needed just a 'model' needed -->
-<h2> Hello {{name}}!</h2>  <!-- example of binding -->
+<input type="text" ng-model="name"> 						<!-- ng-model is a directive that tells Angular to do two-way data binding. It works together with 																		 input, select, textarea. You can easily write your own directives to use ngModel as well. 																		 	 Definition: http://docs.angularjs.org/api/ng.directive:ngModel -->
+
+															<!-- No script tag needed just a 'model' needed.Type = text, another example could be type="password"		 or type="checkbox"-->
+
+
+<h2> Hello {{name}}!</h2>  									<!-- Example of binding in practice. Whatever is include within the curly brackets, in this case 
+															{{ name }}, it must match whats included within the ng-model=""-->
 
 
 
-<!-- Just a comment made after the code you cloned to my desktop. Next Step upload the change back up. If you see this then success!!
- -->
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="angular.min.js"></script>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>	<!-- A link to JQuery. All JavaScript files required are added here -->
+<script type="text/javascript" src="angular.min.js"></script>								<!-- A link to Angular's Javascript -->
+<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->						<!-- A link to Bootstrap's Javascript. *Only here for show -->
 </body>
 </html>
