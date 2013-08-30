@@ -2,10 +2,10 @@ Task 3 - First completetion of a SPA. Single Page Application.
 
 Main points learned: 
 
-1.<ng-view>
+1. ng-view 
 2. Building a module eg. var app = ngular.module("XXX",[])
 3. config
-4.$routeProvder for routing to other sites
+4. $routeProvder for routing to other sites
 5. .when/.otherwise
 6. $scope
 7. Including controllers within config
