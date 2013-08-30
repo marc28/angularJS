@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang ="en" ng-app = "site">
+<html lang ="en">
 <head>
-	<title>Task 3 - J Angular </title>
+	<title>Task 2 - Navigation Bar </title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
 
@@ -16,20 +16,20 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="#/">Marc Grogan - Task 3</a>
+    <a class="navbar-brand" href="#">Task 2</a>
 
-    <div class="nav-collapse collapse navbar-responsive-collapse">
+    <div class="nav-collapse ">
 	<ul class="nav navbar-nav pull-right">
-		<li class="active"><a href="#/">Home</a></li>
-		<li><a href="#/about">About</a></li>
+	<li class="active"><a href="#">Home</a></li>
+	<li><a href="#">About</a></li>
 		<li class="dropdown">
 		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 		       Administration<span class="caret"></span>
 		    </a>
 		    <ul class="dropdown-menu">
-		      	<li><a href="#/admin/user">Users</a></li>
-		  	<li><a href="#/admin/system">Systems</a></li>
-		  	<li><a href="http://www.liverpoolfc.com/">Liverpool FC</a></li>
+		    <li><a href="#">Users</a></li>
+		    <li><a href="#">Systems</a></li>
+		    <li><a href="http://www.liverpoolfc.com/">Liverpool FC</a></li>
 		    </ul>
 		</li>
 	</ul>   	
@@ -37,12 +37,7 @@
   </div>
 </div>
 
-<!--Main body-->
-<div id="mainDiv" ng-view="" class="container well"></div>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
